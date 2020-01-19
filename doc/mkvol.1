@@ -1,0 +1,34 @@
+.TH MKVOL 1 "19 January 2020" "" "mkvol man page"
+.SH NAME
+mkvol \- make a "volatile" temporary file
+.SH SYNOPSIS
+.ll +8
+.B mkvol
+.RB [OPTIONS]...
+.I FILENAME\c
+\[char46]..
+.ll -8
+.br
+.SH DESCRIPTION
+Create temporary file
+.I FILENAME
+when called, then fork into the background and wait for the calling process to terminate before deleting 
+.I FILENAME\c
+\[char46]
+.SH OPTIONS
+.TP
+.B \-f
+overwrite FILENAME if it already exists
+.TP        
+.B \-h
+prints a help message
+.TP        
+.B \-T
+causes mkvol to be late when testing whether to delete 
+.I FILENAME 
+.SH AUTHOR
+Written by Ian "Luna" Ericson
+.SH BUGS
+Report bugs to CPT-GrayWolf on GitHub.    
+.SH COPYRIGHT
+Copyright \(co 2020 Ian "Luna" Ericson.  Licence: GPLv2+
