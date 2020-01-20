@@ -16,7 +16,7 @@ However, if you encounter any errors building or using the program due to UPIDs 
 
 	# make CFLAGS="-D NO_UPID"
 This shouldn't be a problem on most systems running Linux, but may be needed for other *nix systems.
-Keep in mind, while other UNIX-like OSs should work, they have now been tested. (Testing welcome!)
+Keep in mind, while other UNIX-like OSs should work, they have not been tested. (Testing welcome!)
 
 ### Install
 Installing 'mkvol' is, again, done with make:
