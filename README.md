@@ -82,6 +82,6 @@ To combat this, 'mkvol' can use Unique PIDs on systems that provide the correct 
 
 This isn't a problem under Linux where procsf is almost always mounted and provides the correct files, but on some systems, like FreeBSD, procfs may not be mounted at all, or may not give the correct information needed to generate the UPIDs that 'mkvol' expects.
 
-If this is the case on your system you can compile 'mkval' using the NO_UPID option, as shown above. This omits the code for UPIDs completely, opening up the chance for the race condition to occur, but seeing as it's not a likely problem to begin with, it should be fine.
+If this is the case on your system you can compile 'mkvol' using the NO_UPID option, as shown above. This omits the code for UPIDs completely, opening up the chance for the race condition to occur, but seeing as it's not a likely problem to begin with, it should be fine.
 
 I hope to fix this in the future, so that UPIDs will work under most systems, but for now, this is fine.
