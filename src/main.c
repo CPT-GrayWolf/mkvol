@@ -298,7 +298,7 @@ int main(int argc, char **argv)
             FILE * file_pointer = fopen(file_name, "w");
             if(file_pointer == NULL)
             {
-                fputs("mkvol: Failed to create file!", stderr);
+                fputs("mkvol: Failed to create file!\n", stderr);
                 exit(EXIT_FAILURE);
             }
             fclose(file_pointer);
